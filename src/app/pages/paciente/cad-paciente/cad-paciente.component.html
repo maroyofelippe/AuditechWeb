@@ -1,0 +1,127 @@
+<section class="pacienteauditech">
+  <form name="form-paciente" action="psot">
+    <br>
+    <fieldset>
+      <legend>PACIENTE</legend>
+      <div class="row">
+        <div class="col" id="labelcol1"><label for="txtIdPaciente">Id Paciente</label></div>
+        <div class="col"><input type="text" name="idPaciente" id="txtIdPaciente" maxlength="14" size="25" disabled>
+        </div>
+        <div class="col" id="labelcol"><label for="txtStatus" class="required">Status</label></div>
+        <div class="col">
+          <select name="status" id="txtStatus" required>
+            <option value="" selected disabled>Selecione Status</option>
+            <option value="Ativo">Ativo</option>
+            <option value="Repouso">Repouso</option>
+            <option value="Inativo">Inativo</option>
+          </select>
+        </div>
+        <div class="col" id="labelcol"><label for="txtIdTratamento">Id Tratamento</label></div>
+        <div class="col"><input type="text" name="idTratamento" id="txtIdTratamento" maxlength="14" size="25" disabled>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col" id="labelcol1"><label for="txtnome" class="required">Nome</label></div>
+        <div class="col"><input type="text" name="nome" id="txtnome" required placeholder="Nome Completo"
+            maxlength="100" size="100"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col" id="labelcol1">
+          <label for="txtdNascimento" class="required">Data Nascimento</label>
+        </div>
+        <div class="col">
+          <input type="date" name="dataNascimento" id="txtdNascimento" required size="25">
+        </div>
+        <div class="col" id="labelcol">
+          <label for="txtCPF" class="required">CPF</label><br>
+        </div>
+        <div class="col">
+          <input type="text" name="cpf" id="txtCPF" required maxlength="14" size="25">
+        </div>
+        <div class="col" id="labelcol">
+          <label for="txtEmail" class="required">E-mail</label>
+        </div>
+        <div class="col">
+          <input type="email" name="email" id="txtEmail" required size="25" placeholder="email@domímio.com.br">
+        </div>
+      </div>
+      <br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>FILIAÇÃO</legend>
+
+      <div class="row">
+        <div class="col" id="labelcol1"><label for="txtMae" class="required">Mãe</label></div>
+        <div class="col"><input type="text" name="mãe" id="txtMae" required placeholder="Nome da mãe do paciente"
+            maxlength="100" size="100"></div>
+        <div class="col"><label for="txtCPFMae" class="required">CPF</label></div>
+        <div class="col"><input type="text" name="cpfMãe" id="txtCPFMae" required maxlength="14" size="25"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col" id="labelcol1"><label for="txtPai">Pai</label></div>
+        <div class="col"><input type="text" name="pai" id="txtPai" placeholder="Nome do pai do Paciente" maxlength="100" size="100"></div>
+        <div class="col"><label for="txtCPFPai">CPF</label></div>
+        <div class="col"><input type="text" name="cpfPai" id="txtCPFPai" maxlength="14" size="25"></div>
+      </div>
+      <br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>ENDEREÇO</legend>
+      <div class="row">
+        <div class="col" id="labelcol1">
+          <label for="txtCep" class="required">CEP</label>
+        </div>
+        <div class="col">
+          <input type="text" name="cep" id="txtCep" required maxlength="9" size="25">
+        </div>
+        <div class="col" id="labelcol">
+          <label for="txtCidade">Cidade</label>
+        </div>
+        <div class="col">
+          <input type="text" name="cidade" id="txtCidade" disabled size="25">
+        </div>
+        <div class="col" id="labelcol">
+          <label for="txtUF">UF</label>
+        </div>
+        <div class="col">
+          <input type="text" name="UF" id="txtUF" disabled size="25">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col" id="labelcol1">
+          <label for="txtEndereco">Rua / Av.</label>
+        </div>
+        <div class="col">
+          <input type="text" name="endereco" id="txtEndereco" disabled maxlength="100" size="100">
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col" id="labelcol1">
+          <label for="txtNumero" class="required">Número</label>
+        </div>
+        <div class="col">
+          <input type="text" name="numero" id="txtNumero" required maxlength="10" size="25">
+        </div>
+
+        <div class="col" id="labelcol">
+          <label for="txtComplemento">Complemento</label>
+        </div>
+        <div class="col">
+          <input type="text" name="complemento" id="txtComplemento" size="25">
+        </div>
+      </div>
+      <br>
+
+    </fieldset>
+    <br>
+    <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+    <input type="reset" name="limpar" id="limpar" value="LIMPAR"><br><br>
+
+
+  </form>
+</section>
